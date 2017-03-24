@@ -24,5 +24,9 @@ SumOfASquare.prototype.sumOfSquares = function() {
 };
 
 SumOfASquare.prototype.squareOfTheSums = function(num) {
-
+  var sum = 0;
+  for (let i = 1; i <= this.naturalNumbers; i++) {
+    sum += i;
+  }
+  return Math.pow(sum, 2);
 };
